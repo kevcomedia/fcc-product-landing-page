@@ -108,29 +108,34 @@
 
       <section id="testimonials" class="bg-white text-black p-10">
         <h2 class="text-center font-semibold text-2xl mb-6">What People Say</h2>
-        <article>
-          <blockquote>
-            Lorem facilis officiis odit accusantium voluptate vel fugiat
+        <!--
+          There shouldn't be any whitespace after the open blockquote tag and
+          before the close tag. Otherwise there will be a space rendered between
+          the quotes and the text (e.g., `" Lorem "`).
+        -->
+        <article class="text-center leading-snug mb-8">
+          <blockquote
+            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+          >Lorem facilis officiis odit accusantium voluptate vel fugiat
             doloribus tenetur ratione Libero recusandae hic similique tempore
-            obcaecati veritatis laudantium? Incidunt!
-          </blockquote>
-          <p>Ipsum molestias</p>
+            obcaecati veritatis laudantium? Incidunt!</blockquote>
+          <p class="uppercase italic before:content-['—']">Ipsum molestias</p>
         </article>
-        <article>
-          <blockquote>
-            Amet eos quibusdam exercitationem architecto consectetur suscipit
+        <article class="text-center leading-snug mb-8">
+          <blockquote
+            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+          >Amet eos quibusdam exercitationem architecto consectetur suscipit
             Magni veritatis suscipit eveniet veniam accusamus laborum Earum
-            nostrum laboriosam dolor sit porro!
-          </blockquote>
-          <p>Sit quo.</p>
+            nostrum laboriosam dolor sit porro!</blockquote>
+          <p class="uppercase italic before:content-['—']">Sit quo.</p>
         </article>
-        <article>
-          <blockquote>
-            Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
+        <article class="text-center leading-snug mb-8">
+          <blockquote
+            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+          >Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
             voluptate suscipit repellat aliquam perspiciatis unde debitis amet!
-            Modi quia tenetur fugit?
-          </blockquote>
-          <p>Consectetur blanditiis?</p>
+            Modi quia tenetur fugit?</blockquote>
+          <p class="uppercase italic before:content-['—']">Consectetur blanditiis?</p>
         </article>
       </section>
 
