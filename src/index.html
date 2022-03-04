@@ -9,7 +9,7 @@
   <body>
     <header
       id="header"
-      class="fixed bg-black text-white w-full flex flex-col items-center py-2 shadow-lg z-10"
+      class="fixed bg-black text-white w-full flex flex-col items-center py-2 shadow-lg z-10 sm:flex-row sm:justify-between sm:px-4 sm:py-1"
     >
       <h1 class="text-2xl font-semibold flex items-center mb-1">
         <img
@@ -48,49 +48,57 @@
       </nav>
     </header>
 
-    <main class="bg-black pt-28">
-      <section id="features" class="bg-black text-white py-10">
-        <div class="px-10">
-          <h2 class="text-center font-semibold text-2xl mb-6">
+    <main class="bg-black pt-28 sm:pt-16">
+      <section id="features" class="bg-black text-white py-10 sm:px-20">
+        <div class="px-10 grid gap-6 sm:grid-cols-2 sm:gap-12 sm:px-0">
+          <h2 class="text-center font-semibold text-2xl sm:col-span-2">
             What Life Has to Offer
           </h2>
 
-          <h3
-            class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-red-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
-          >
-            Adipisicing vero
-          </h3>
-          <p class="font-light leading-snug mb-5">
-            Dolor voluptate eveniet voluptas amet cupiditate! Quo accusantium
-            modi hic dolores reiciendis Eos perferendis possimus obcaecati?
-          </p>
-          <h3
-            class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-yellow-400 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
-          >
-            Consectetur sed.
-          </h3>
-          <p class="font-light leading-snug mb-5">
-            Elit ipsum reiciendis sunt debitis quasi Fugiat consequuntur quasi
-            perspiciatis architecto optio incidunt. Quae nesciunt voluptatibus.
-          </p>
-          <h3
-            class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-green-500 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
-          >
-            Amet harum.
-          </h3>
-          <p class="font-light leading-snug mb-5">
-            Consectetur aperiam maxime rem dicta ducimus Quae modi iure porro
-            mollitia quisquam. Sapiente maiores saepe officiis?
-          </p>
-          <h3
-            class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-blue-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
-          >
-            Elit numquam.
-          </h3>
-          <p class="font-light leading-snug mb-5">
-            Sit delectus deleniti laboriosam incidunt consectetur debitis
-            mollitia hic, alias Aut sint suscipit optio iste ratione
-          </p>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-red-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Adipisicing vero
+            </h3>
+            <p class="font-light leading-snug">
+              Dolor voluptate eveniet voluptas amet cupiditate! Quo accusantium
+              modi hic dolores reiciendis Eos perferendis possimus obcaecati?
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-yellow-400 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Consectetur sed.
+            </h3>
+            <p class="font-light leading-snug">
+              Elit ipsum reiciendis sunt debitis quasi Fugiat consequuntur quasi
+              perspiciatis architecto optio incidunt. Quae nesciunt voluptatibus.
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-green-500 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Amet harum.
+            </h3>
+            <p class="font-light leading-snug">
+              Consectetur aperiam maxime rem dicta ducimus Quae modi iure porro
+              mollitia quisquam. Sapiente maiores saepe officiis?
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-blue-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Elit numquam.
+            </h3>
+            <p class="font-light leading-snug">
+              Sit delectus deleniti laboriosam incidunt consectetur debitis
+              mollitia hic, alias Aut sint suscipit optio iste ratione
+            </p>
+          </div>
         </div>
 
         <iframe
@@ -108,40 +116,42 @@
 
       <section id="testimonials" class="bg-white text-black p-10">
         <h2 class="text-center font-semibold text-2xl mb-6">What People Say</h2>
-        <!--
-          There shouldn't be any whitespace after the open blockquote tag and
-          before the close tag. Otherwise there will be a space rendered between
-          the quotes and the text (e.g., `" Lorem "`).
-        -->
-        <article class="text-center leading-snug mb-8">
-          <blockquote
-            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
-          >Lorem facilis officiis odit accusantium voluptate vel fugiat
-            doloribus tenetur ratione Libero recusandae hic similique tempore
-            obcaecati veritatis laudantium? Incidunt!</blockquote>
-          <p class="uppercase italic before:content-['—']">Consectetur saepe</p>
-        </article>
-        <article class="text-center leading-snug mb-8">
-          <blockquote
-            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
-          >Amet eos quibusdam exercitationem architecto consectetur suscipit
-            Magni veritatis suscipit eveniet veniam accusamus laborum Earum
-            nostrum laboriosam dolor sit porro!</blockquote>
-          <p class="uppercase italic before:content-['—']">Sit quo.</p>
-        </article>
-        <article class="text-center leading-snug mb-8">
-          <blockquote
-            class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
-          >Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
-            voluptate suscipit repellat aliquam perspiciatis unde debitis amet!
-            Modi quia tenetur fugit?</blockquote>
-          <p class="uppercase italic before:content-['—']">Consectetur blanditiis?</p>
-        </article>
+        <div class="flex flex-wrap justify-around items-end">
+          <!--
+            There shouldn't be any whitespace after the open blockquote tag and
+            before the close tag. Otherwise there will be a space rendered between
+            the quotes and the text (e.g., `" Lorem "`).
+          -->
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Lorem facilis officiis odit accusantium voluptate vel fugiat
+              doloribus tenetur ratione Libero recusandae hic similique tempore
+              obcaecati veritatis laudantium? Incidunt!</blockquote>
+            <p class="uppercase italic before:content-['—']">Consectetur saepe</p>
+          </article>
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Amet eos quibusdam exercitationem architecto consectetur suscipit
+              Magni veritatis suscipit eveniet veniam accusamus laborum Earum
+              nostrum laboriosam dolor sit porro!</blockquote>
+            <p class="uppercase italic before:content-['—']">Sit quo.</p>
+          </article>
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
+              voluptate suscipit repellat aliquam perspiciatis unde debitis amet!
+              Modi quia tenetur fugit?</blockquote>
+            <p class="uppercase italic before:content-['—']">Consectetur blanditiis?</p>
+          </article>
+        </div>
       </section>
 
       <section id="pricing" class="bg-gray-200 text-black p-10">
         <h2 class="text-center font-semibold text-2xl mb-6">Pricing</h2>
-        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4">
+        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs">
           <header class="text-center leading-tight mb-3">
             <h3 class="font-semibold">Tier One</h3>
             <p class="font-light">Premium Offering</p>
@@ -162,7 +172,7 @@
             </a>
           </p>
         </section>
-        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4">
+        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs">
           <header class="text-center leading-tight mb-3">
             <h3 class="font-semibold">Tier Two</h3>
             <p class="font-light">Advertiser-supported Offering</p>
@@ -183,7 +193,7 @@
             </a>
           </p>
         </section>
-        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4">
+        <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs">
           <header class="text-center leading-tight mb-3">
             <h3 class="font-semibold">Tier Three</h3>
             <p class="font-light">Value Offering</p>
@@ -216,14 +226,14 @@
           and don't miss out on Life!
         </p>
         <form
-          class="flex flex-col items-center mb-8"
+          class="flex flex-col items-center mb-8 mx-auto max-w-xl sm:flex-row"
           id="form"
           method="POST"
           action="https://www.freecodecamp.com/email-submit"
         >
           <label for="email" class="sr-only">Email</label>
           <input
-            class="text-black border-2 border-slate-400 rounded-lg p-2 mb-3 w-full focus:outline-none focus:ring-2 focus:ring-slate-400"
+            class="text-black border-2 border-slate-400 rounded-lg p-2 mb-3 w-full focus:outline-none focus:ring-2 focus:ring-slate-400 sm:mb-0 sm:mr-3"
             id="email"
             name="email"
             type="email"
