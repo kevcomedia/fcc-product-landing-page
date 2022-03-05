@@ -7,46 +7,102 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <header id="header">
-      <h1>
-        <img id="header-img" src="images/logo.png" alt="Life logo" /> Life
+    <header
+      id="header"
+      class="fixed bg-black text-white w-full flex flex-col items-center py-2 shadow-lg z-10 sm:flex-row sm:justify-between sm:px-4 sm:py-1"
+    >
+      <h1 class="text-2xl font-semibold flex items-center mb-1">
+        <img
+          class="mr-1.5"
+          id="header-img"
+          src="images/logo.png"
+          alt="Life logo"
+        />
+        Life
       </h1>
 
       <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#features">Features</a></li>
-          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <ul class="flex font-light">
+          <li>
+            <a
+              class="nav-link block px-3 py-2 transition-colors duration-200 hover:underline hover:text-black hover:bg-blue-400 focus:underline focus:text-black focus:bg-blue-400"
+              href="#features"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link block px-3 py-2 transition-colors duration-200 hover:underline hover:text-black hover:bg-blue-400 focus:underline focus:text-black focus:bg-blue-400"
+              href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link block px-3 py-2 transition-colors duration-200 hover:underline hover:text-black hover:bg-blue-400 focus:underline focus:text-black focus:bg-blue-400"
+              href="#pricing"
+              >Pricing</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section id="features">
-        <h2>What Life Has to Offer</h2>
+    <main class="bg-black pt-28 sm:pt-16">
+      <section id="features" class="bg-black text-white py-10 sm:px-20">
+        <div class="px-10 max-w-2xl mx-auto grid gap-6 sm:grid-cols-2 sm:gap-12 sm:px-0">
+          <h2 class="text-center font-semibold text-2xl sm:col-span-2">
+            What Life Has to Offer
+          </h2>
 
-        <h3>Adipisicing vero</h3>
-        <p>
-          Dolor voluptate eveniet voluptas amet cupiditate! Quo accusantium modi
-          hic dolores reiciendis Eos perferendis possimus obcaecati?
-        </p>
-        <h3>Consectetur sed.</h3>
-        <p>
-          Elit ipsum reiciendis sunt debitis quasi Fugiat consequuntur quasi
-          perspiciatis architecto optio incidunt. Quae nesciunt voluptatibus.
-        </p>
-        <h3>Amet harum.</h3>
-        <p>
-          Consectetur aperiam maxime rem dicta ducimus Quae modi iure porro
-          mollitia quisquam. Sapiente maiores saepe officiis?
-        </p>
-        <h3>Elit numquam.</h3>
-        <p>
-          Sit delectus deleniti laboriosam incidunt consectetur debitis mollitia
-          hic, alias Aut sint suscipit optio iste ratione
-        </p>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-red-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Adipisicing vero
+            </h3>
+            <p class="font-light leading-snug">
+              Dolor voluptate eveniet voluptas amet cupiditate! Quo accusantium
+              modi hic dolores reiciendis Eos perferendis possimus obcaecati?
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-yellow-400 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Consectetur sed.
+            </h3>
+            <p class="font-light leading-snug">
+              Elit ipsum reiciendis sunt debitis quasi Fugiat consequuntur quasi
+              perspiciatis architecto optio incidunt. Quae nesciunt voluptatibus.
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-green-500 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Amet harum.
+            </h3>
+            <p class="font-light leading-snug">
+              Consectetur aperiam maxime rem dicta ducimus Quae modi iure porro
+              mollitia quisquam. Sapiente maiores saepe officiis?
+            </p>
+          </div>
+          <div>
+            <h3
+              class="text-xl mb-3 flex items-center relative before:content-[''] before:block before:bg-blue-700 before:w-1.5 before:h-1.5 before:absolute before:-left-4"
+            >
+              Elit numquam.
+            </h3>
+            <p class="font-light leading-snug">
+              Sit delectus deleniti laboriosam incidunt consectetur debitis
+              mollitia hic, alias Aut sint suscipit optio iste ratione
+            </p>
+          </div>
+        </div>
 
         <iframe
+          class="max-w-full aspect-video mt-10 mx-auto"
           id="video"
           width="560"
           height="315"
@@ -58,107 +114,153 @@
         ></iframe>
       </section>
 
-      <section id="testimonials">
-        <h2>What People Say</h2>
-        <article>
-          <blockquote>
-            Lorem facilis officiis odit accusantium voluptate vel fugiat
-            doloribus tenetur ratione Libero recusandae hic similique tempore
-            obcaecati veritatis laudantium? Incidunt!
-          </blockquote>
-          <p>Ipsum molestias</p>
-        </article>
-        <article>
-          <blockquote>
-            Amet eos quibusdam exercitationem architecto consectetur suscipit
-            Magni veritatis suscipit eveniet veniam accusamus laborum Earum
-            nostrum laboriosam dolor sit porro!
-          </blockquote>
-          <p>Sit quo.</p>
-        </article>
-        <article>
-          <blockquote>
-            Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
-            voluptate suscipit repellat aliquam perspiciatis unde debitis amet!
-            Modi quia tenetur fugit?
-          </blockquote>
-          <p>Consectetur blanditiis?</p>
-        </article>
+      <section id="testimonials" class="bg-white text-black p-10">
+        <h2 class="text-center font-semibold text-2xl mb-6">What People Say</h2>
+        <div class="flex flex-wrap justify-around items-end max-w-5xl mx-auto">
+          <!--
+            There shouldn't be any whitespace after the open blockquote tag and
+            before the close tag. Otherwise there will be a space rendered between
+            the quotes and the text (e.g., `" Lorem "`).
+          -->
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Lorem facilis officiis odit accusantium voluptate vel fugiat
+              doloribus tenetur ratione Libero recusandae hic similique tempore
+              obcaecati veritatis laudantium? Incidunt!</blockquote>
+            <p class="uppercase italic before:content-['—']">Consectetur saepe</p>
+          </article>
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Amet eos quibusdam exercitationem architecto consectetur suscipit
+              Magni veritatis suscipit eveniet veniam accusamus laborum Earum
+              nostrum laboriosam dolor sit porro!</blockquote>
+            <p class="uppercase italic before:content-['—']">Sit quo.</p>
+          </article>
+          <article class="text-center leading-snug mb-8 sm:max-w-2xl sm:basis-60 sm:grow sm:mx-4">
+            <blockquote
+              class="font-light mb-4 before:content-[open-quote] after:content-[close-quote]"
+            >Elit cum nobis voluptatem deserunt necessitatibus inventore Autem
+              voluptate suscipit repellat aliquam perspiciatis unde debitis amet!
+              Modi quia tenetur fugit?</blockquote>
+            <p class="uppercase italic before:content-['—']">Consectetur blanditiis?</p>
+          </article>
+        </div>
       </section>
 
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <section>
-          <header>
-            <h3>Tier One</h3>
-            <p>Premium Offering</p>
-          </header>
-          <p>$999 / month</p>
-          <ul>
-            <li>Dolor minus fugit aliquid.</li>
-            <li>Adipisicing id ipsum ipsa?</li>
-            <li>Amet commodi maxime enim</li>
-            <li>Lorem vitae explicabo beatae</li>
-          </ul>
-          <p><a href="#">Sign up</a></p>
-        </section>
-        <section>
-          <header>
-            <h3>Tier Two</h3>
-            <p>Advertiser-supported Offering</p>
-          </header>
-          <p>$399 / month</p>
-          <ul>
-            <li>Lorem dolor libero deserunt?</li>
-            <li>Ipsum non nihil placeat</li>
-            <li>Consectetur magni aspernatur enim.</li>
-            <li>Lorem in voluptas tempora!</li>
-          </ul>
-          <p><a href="#">Sign up</a></p>
-        </section>
-        <section>
-          <header>
-            <h3>Tier Three</h3>
-            <p>Value Offering</p>
-          </header>
-          <p>Free</p>
-          <ul>
-            <li>Lorem vero laboriosam veritatis!</li>
-            <li>Consectetur commodi aspernatur tenetur.</li>
-            <li>Ipsum atque inventore neque.</li>
-            <li>Dolor aspernatur similique sint.</li>
-          </ul>
-          <p><a href="#">Sign up</a></p>
-        </section>
+      <section id="pricing" class="bg-gray-200 text-black p-10">
+        <h2 class="text-center font-semibold text-2xl mb-6">Pricing</h2>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-x-5 lg:max-w-5xl lg:mx-auto">
+          <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs lg:mx-0 lg:max-w-none">
+            <header class="text-center leading-tight mb-3">
+              <h3 class="font-semibold">Tier One</h3>
+              <p class="font-light">Premium Offering</p>
+            </header>
+            <p class="text-center text-2xl mb-6">$999 / month</p>
+            <ul class="font-light text-sm list-square list-inside divide-y divide-slate-400 mb-3">
+              <li class="pl-2 py-2">Dolor minus fugit aliquid.</li>
+              <li class="pl-2 py-2">Adipisicing id ipsum ipsa?</li>
+              <li class="pl-2 py-2">Amet commodi maxime enim</li>
+              <li class="pl-2 py-2">Lorem vitae explicabo beatae</li>
+            </ul>
+            <p class="text-center">
+              <a
+                class="border-2 border-slate-400 rounded-lg text-slate-900 px-10 py-2 transition-color duration-200 hover:border-blue-700 hover:bg-blue-700 hover:text-white focus:border-blue-700 focus:bg-blue-700 focus:text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                href="#"
+              >
+                Sign up
+              </a>
+            </p>
+          </section>
+          <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs lg:mx-0 lg:max-w-none">
+            <header class="text-center leading-tight mb-3">
+              <h3 class="font-semibold">Tier Two</h3>
+              <p class="font-light">Advertiser-supported Offering</p>
+            </header>
+            <p class="text-center text-2xl mb-6">$399 / month</p>
+            <ul class="font-light text-sm list-square list-inside divide-y divide-slate-400 mb-3">
+              <li class="pl-2 py-2">Lorem dolor libero deserunt?</li>
+              <li class="pl-2 py-2">Ipsum non nihil placeat</li>
+              <li class="pl-2 py-2">Consectetur magni aspernatur enim.</li>
+              <li class="pl-2 py-2">Lorem in voluptas tempora!</li>
+            </ul>
+            <p class="text-center">
+              <a
+                class="border-2 border-slate-400 rounded-lg text-slate-900 px-10 py-2 transition-color duration-200 hover:border-blue-700 hover:bg-blue-700 hover:text-white focus:border-blue-700 focus:bg-blue-700 focus:text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                href="#"
+              >
+                Sign up
+              </a>
+            </p>
+          </section>
+          <section class="bg-white border border-slate-400 rounded-lg shadow-lg p-6 mb-4 mx-auto max-w-xs lg:mx-0 lg:max-w-none">
+            <header class="text-center leading-tight mb-3">
+              <h3 class="font-semibold">Tier Three</h3>
+              <p class="font-light">Value Offering</p>
+            </header>
+            <p class="text-center text-2xl mb-6">Free</p>
+            <ul class="font-light text-sm list-square list-inside divide-y divide-slate-400 mb-3">
+              <li class="pl-2 py-2">Lorem vero laboriosam veritatis!</li>
+              <li class="pl-2 py-2">Consectetur commodi aspernatur tenetur.</li>
+              <li class="pl-2 py-2">Ipsum atque inventore neque.</li>
+              <li class="pl-2 py-2">Dolor aspernatur similique sint.</li>
+            </ul>
+            <p class="text-center">
+              <a
+                class="border-2 border-slate-400 rounded-lg text-slate-900 px-10 py-2 transition-color duration-200 hover:border-blue-700 hover:bg-blue-700 hover:text-white focus:border-blue-700 focus:bg-blue-700 focus:text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                href="#"
+              >
+                Sign up
+              </a>
+            </p>
+          </section>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Sign up for our newsletter and don't miss out on Life!</p>
-      <form
-        id="form"
-        method="POST"
-        action="https://www.freecodecamp.com/email-submit"
-      >
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="e.g., jdoe@example.com"
-          required
-        />
-        <input id="submit" type="submit" value="Sign me up" />
-      </form>
+    <footer class="bg-black text-white">
+      <div class="p-10">
+        <p class="text-2xl text-center leading-none">
+          Sign up for our newsletter
+        </p>
+        <p class="text-base text-center font-light leading-snug mb-3">
+          and don't miss out on Life!
+        </p>
+        <form
+          class="flex flex-col items-center mb-8 mx-auto max-w-xl sm:flex-row"
+          id="form"
+          method="POST"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <label for="email" class="sr-only">Email</label>
+          <input
+            class="text-black border-2 border-slate-400 rounded-lg p-2 mb-3 w-full focus:outline-none focus:ring-2 focus:ring-slate-400 sm:mb-0 sm:mr-3"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="e.g., jdoe@example.com"
+            required
+          />
+          <input
+            class="border-2 border-slate-400 rounded-lg text-white px-10 py-2 transition-color duration-200 hover:border-blue-700 hover:bg-blue-700 hover:text-white focus:border-blue-700 focus:bg-blue-700 focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-300"
+            id="submit"
+            type="submit"
+            value="Sign me up"
+          />
+        </form>
+      </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <small>© 2022, Life</small>
+      <div class="flex justify-between items-baseline p-4 font-light">
+        <nav>
+          <ul class="flex underline">
+            <li class="mr-4"><a href="#">Privacy</a></li>
+            <li class="mr-4"><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <small>© 2022, Life</small>
+      </div>
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
